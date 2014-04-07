@@ -52,6 +52,9 @@ public class MainActivity extends FragmentActivity implements
 	 * simply returns the {@link android.app.Activity} if
 	 * <code>getThemedContext</code> is unavailable.
 	 */
+	
+	//test comment
+	
 	@TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH)
 	private Context getActionBarThemedContextCompat() {
 		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH) {
