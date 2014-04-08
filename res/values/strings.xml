@@ -6,5 +6,25 @@
     <string name="title_section1">Section 1</string>
     <string name="title_section2">Section 2</string>
     <string name="title_section3">Section 3</string>
+    <string name="app_name">Safety Check</string>
+    <string name="action_settings">Settings</string>
+    <string name="IndoorUnit">Indoor Unit</string>
+    <string name="Make">Make</string>
+    <string name="Model">Model</string>
+    <string name="SerialNumber">Serial Number</string>
+    <string name="OutdoorUnit">Outdoor Unit</string>
+    <string name="COReading">Carbon Monoxide Reading(Parts Per Million)</string>
+	<string name="SupplyAir">Supply Air</string>
+	<string name="FluGasses">Flu Gasses</string>
+	<string name="TemperatureRise">Temperature Rise</string>
+	<string name="IndoorRise">Indoor Unit</string>
+	<string name="OutdoorRise">Outdoor Unit</string>
+	<string name="OperatingRange">Operating Range</string>
+	<string name="High">High</string>
+	<string name="Low">Low</string>
+	<string name="GasPresure">Gas Presure</string>
+	<string name="GP">(only needed for Natural Gas and LP units)</string>
+	<string name="FilterSize">Filter Size</string>
+
 
 </resources>

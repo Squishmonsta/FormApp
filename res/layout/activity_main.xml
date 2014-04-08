@@ -1,8 +1,260 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/container"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:layout_height="fill_parent">
+ 
+<!--Put form controls here-->
+
+<!--Indoor Unit-->
+ 
+<TextView
+    android:id="@+id/TextViewTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Indoor Unit"
+    android:textSize="10pt">
+</TextView>
+
+<EditText
+    android:id="@+id/IndoorMake"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    tools:ignore="MergeRootFrame" />
+    android:layout_height="wrap_content"
+    android:hint="Make"
+    >
+</EditText>
+
+<EditText
+    android:id="@+id/IndoorModel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Model"
+    >
+</EditText>
+
+<EditText
+    android:id="@+id/IndoorSerial"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Serial Number"
+    >
+</EditText>
+
+
+<!--Outdoor Unit-->
+
+<TextView
+    android:id="@+id/TextViewTitle"
+    android:layout_width="310dp"
+    android:layout_height="wrap_content"
+    android:text="Outdoor Unit"
+    android:textSize="10pt" >
+
+</TextView>
+
+<EditText
+    android:id="@+id/OutdoorMake"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Make"
+    >
+</EditText>
+
+<EditText
+    android:id="@+id/OutdoorModel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Model"
+    >
+</EditText>
+
+<EditText
+    android:id="@+id/OutdoorSerial"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Serial Number"
+    >
+</EditText>
+
+<!--Carbon Monoxide Reading-->
+
+<TextView
+    android:id="@+id/TextViewTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Carbon Monoxide Reading(Parts Per Million)"
+    android:textSize="10pt">
+</TextView>
+
+<EditText
+    android:id="@+id/SupplyAir"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Supply Air "
+    >
+</EditText>
+
+<EditText
+    android:id="@+id/FluGasses"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Flu Gasses "
+    >
+</EditText>
+
+
+<!--Tempature Rise-->
+
+
+<TextView
+    android:id="@+id/TextViewTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Tempature Rise"
+    android:textSize="10pt">
+</TextView>
+
+
+<EditText
+    android:id="@+id/IndoorTempRise"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Indoor Unit "
+    >
+</EditText>
+
+<EditText
+    android:id="@+id/OutdoorTempRise"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Outoor Unit "
+    >
+</EditText>
+
+
+<!--Operating Range-->
+
+
+<TextView
+    android:id="@+id/TextViewTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Operating Range"
+    android:textSize="10pt">
+</TextView>
+
+<TextView
+    android:id="@+id/TextViewTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Indoor Unit"
+    android:textSize="6pt">
+</TextView>
+
+<EditText
+    android:id="@+id/IndoorHigh"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="High"
+    >
+</EditText>
+
+<EditText
+    android:id="@+id/IndoorLow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Low"
+    >
+</EditText>
+
+<TextView
+    android:id="@+id/TextViewTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Outdoor Unit"
+    android:textSize="6pt">
+</TextView>
+
+<EditText
+    android:id="@+id/OutdoorHigh"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="High"
+    >
+</EditText>
+
+<EditText
+    android:id="@+id/OutdoorLow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Low"
+    >
+</EditText>
+
+
+
+<!--Gas Presure-->
+
+
+<TextView
+    android:id="@+id/TextViewTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Gas Presure"
+    android:textSize="10pt">
+</TextView>
+
+<EditText
+    android:id="@+id/GasPresure"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="(only needed for Natural Gas and LP units)"
+    >
+    
+</EditText>
+
+
+<!--Filter Size-->
+
+
+<TextView
+    android:id="@+id/TextViewTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Filter Size"
+    android:textSize="10pt">
+</TextView>
+
+<EditText
+    android:id="@+id/FilterLength"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Length"
+    >
+</EditText>
+
+<EditText
+    android:id="@+id/FilterWidth"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Width"
+    >
+</EditText>
+
+<EditText
+    android:id="@+id/FilterHeigth"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Height"
+    >
+</EditText>
+
+    </LinearLayout>
+</ScrollView>
+
 
