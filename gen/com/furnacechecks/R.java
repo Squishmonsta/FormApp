@@ -55,11 +55,28 @@ public final class R {
         public static final int main=0x7f070000;
     }
     public static final class string {
+        public static final int COReading=0x7f050007;
+        public static final int FilterSize=0x7f050012;
+        public static final int FluGasses=0x7f050009;
+        public static final int GP=0x7f050011;
+        public static final int GasPresure=0x7f050010;
+        public static final int Height=0x7f050015;
+        public static final int High=0x7f05000e;
+        public static final int IndoorRise=0x7f05000b;
+        public static final int IndoorUnit=0x7f050002;
+        public static final int Length=0x7f050013;
+        public static final int Low=0x7f05000f;
+        public static final int Make=0x7f050003;
+        public static final int Model=0x7f050004;
+        public static final int OperatingRange=0x7f05000d;
+        public static final int OutdoorRise=0x7f05000c;
+        public static final int OutdoorUnit=0x7f050006;
+        public static final int SerialNumber=0x7f050005;
+        public static final int SupplyAir=0x7f050008;
+        public static final int TemperatureRise=0x7f05000a;
+        public static final int Width=0x7f050014;
         public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
-        public static final int title_section1=0x7f050002;
-        public static final int title_section2=0x7f050003;
-        public static final int title_section3=0x7f050004;
     }
     public static final class style {
         /** 

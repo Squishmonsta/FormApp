@@ -17,7 +17,7 @@
     android:id="@+id/TextViewTitle"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="Indoor Unit"
+    android:text="@string/IndoorUnit"
     android:textSize="10pt">
 </TextView>
 
@@ -25,7 +25,7 @@
     android:id="@+id/IndoorMake"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:hint="Make"
+    android:hint="@string/Make"
     >
 </EditText>
 
@@ -33,7 +33,7 @@
     android:id="@+id/IndoorModel"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:hint="Model"
+    android:hint="@string/Model"
     >
 </EditText>
 
@@ -41,7 +41,7 @@
     android:id="@+id/IndoorSerial"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:hint="Serial Number"
+    android:hint="@string/SerialNumber"
     >
 </EditText>
 
@@ -52,7 +52,7 @@
     android:id="@+id/TextViewTitle"
     android:layout_width="310dp"
     android:layout_height="wrap_content"
-    android:text="Outdoor Unit"
+    android:text="@string/OutdoorUnit"
     android:textSize="10pt" >
 
 </TextView>
@@ -61,7 +61,7 @@
     android:id="@+id/OutdoorMake"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:hint="Make"
+    android:hint="@string/Make"
     >
 </EditText>
 
@@ -69,7 +69,7 @@
     android:id="@+id/OutdoorModel"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:hint="Model"
+    android:hint="@string/Model"
     >
 </EditText>
 
@@ -77,7 +77,7 @@
     android:id="@+id/OutdoorSerial"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:hint="Serial Number"
+    android:hint="@string/SerialNumber"
     >
 </EditText>
 
@@ -87,7 +87,7 @@
     android:id="@+id/TextViewTitle"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="Carbon Monoxide Reading(Parts Per Million)"
+    android:text="@string/COReading"
     android:textSize="10pt">
 </TextView>
 
@@ -95,7 +95,7 @@
     android:id="@+id/SupplyAir"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:hint="Supply Air "
+    android:hint="@string/SupplyAir"
     >
 </EditText>
 
@@ -103,19 +103,19 @@
     android:id="@+id/FluGasses"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:hint="Flu Gasses "
+    android:hint="@string/FluGasses"
     >
 </EditText>
 
 
-<!--Tempature Rise-->
+<!--Temperature Rise-->
 
 
 <TextView
     android:id="@+id/TextViewTitle"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="Tempature Rise"
+    android:text="@string/TemperatureRise"
     android:textSize="10pt">
 </TextView>
 
@@ -124,7 +124,7 @@
     android:id="@+id/IndoorTempRise"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:hint="Indoor Unit "
+    android:hint="@string/IndoorRise"
     >
 </EditText>
 
@@ -132,7 +132,7 @@
     android:id="@+id/OutdoorTempRise"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:hint="Outoor Unit "
+    android:hint="@string/OutdoorRise"
     >
 </EditText>
 
@@ -144,7 +144,7 @@
     android:id="@+id/TextViewTitle"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="Operating Range"
+    android:text="@string/OperatingRange"
     android:textSize="10pt">
 </TextView>
 
@@ -152,7 +152,7 @@
     android:id="@+id/TextViewTitle"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="Indoor Unit"
+    android:text="@string/IndoorUnit"
     android:textSize="6pt">
 </TextView>
 
@@ -160,7 +160,7 @@
     android:id="@+id/IndoorHigh"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:hint="High"
+    android:hint="@string/High"
     >
 </EditText>
 
@@ -168,7 +168,7 @@
     android:id="@+id/IndoorLow"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:hint="Low"
+    android:hint="@string/Low"
     >
 </EditText>
 
@@ -176,7 +176,7 @@
     android:id="@+id/TextViewTitle"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="Outdoor Unit"
+    android:text="@string/OutdoorUnit"
     android:textSize="6pt">
 </TextView>
 
@@ -184,7 +184,7 @@
     android:id="@+id/OutdoorHigh"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:hint="High"
+    android:hint="@string/High"
     >
 </EditText>
 
@@ -192,7 +192,7 @@
     android:id="@+id/OutdoorLow"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:hint="Low"
+    android:hint="@string/Low"
     >
 </EditText>
 
@@ -205,7 +205,7 @@
     android:id="@+id/TextViewTitle"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="Gas Presure"
+    android:text="@string/GasPresure"
     android:textSize="10pt">
 </TextView>
 
@@ -213,7 +213,7 @@
     android:id="@+id/GasPresure"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:hint="(only needed for Natural Gas and LP units)"
+    android:hint="@string/GP"
     >
     
 </EditText>
@@ -226,7 +226,7 @@
     android:id="@+id/TextViewTitle"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="Filter Size"
+    android:text="@string/FilterSize"
     android:textSize="10pt">
 </TextView>
 
@@ -234,7 +234,7 @@
     android:id="@+id/FilterLength"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:hint="Length"
+    android:hint="@string/Length"
     >
 </EditText>
 
@@ -242,7 +242,7 @@
     android:id="@+id/FilterWidth"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:hint="Width"
+    android:hint="@string/Width"
     >
 </EditText>
 
@@ -250,7 +250,7 @@
     android:id="@+id/FilterHeigth"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:hint="Height"
+    android:hint="@string/Height"
     >
 </EditText>
 
