@@ -2,19 +2,15 @@ package com.furnacechecks;
 
 import android.annotation.TargetApi;
 import android.app.ActionBar;
-import android.os.Bundle;
 import android.content.Context;
 import android.os.Build;
+import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.NavUtils;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 public class MainActivity extends FragmentActivity implements
@@ -24,6 +20,7 @@ public class MainActivity extends FragmentActivity implements
 	 * The serialization (saved instance state) Bundle key representing the
 	 * current dropdown position.
 	 */
+	
 	private static final String STATE_SELECTED_NAVIGATION_ITEM = "selected_navigation_item";
 
 	@Override
@@ -35,7 +32,7 @@ public class MainActivity extends FragmentActivity implements
 		final ActionBar actionBar = getActionBar();
 		actionBar.setDisplayShowTitleEnabled(false);
 		actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_LIST);
-
+		
 		// Set up the dropdown list navigation in the action bar.
 		actionBar.setListNavigationCallbacks(
 		// Specify a SpinnerAdapter to populate the dropdown list.
@@ -99,6 +96,7 @@ public class MainActivity extends FragmentActivity implements
 				.replace(R.id.container, fragment).commit();
 		return true;
 	}
+	
 
 	/**
 	 * A dummy fragment representing a section of the app, but that simply
