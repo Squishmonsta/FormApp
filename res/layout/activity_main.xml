@@ -223,7 +223,7 @@
 
 
 <TextView
-    android:id="@+id/TextViewTitle"
+    android:id="@+id/TextViewTitle" 
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="@string/FilterSize"
@@ -231,7 +231,7 @@
 </TextView>
 
 <EditText
-    android:id="@+id/FilterLength"
+    android:id="@+id/FilterLength" 
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:hint="@string/Length"
@@ -239,7 +239,7 @@
 </EditText>
 
 <EditText
-    android:id="@+id/FilterWidth"
+    android:id="@+id/FilterWidth" 
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:hint="@string/Width"
