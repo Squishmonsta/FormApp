@@ -12,9 +12,10 @@
 <!--Put form controls here-->
 
 <!--Indoor Unit-->
+
  
 <TextView
-    android:id="@+id/TextViewTitle"
+    android:id="@+id/IndoorUnitTitle"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="@string/IndoorUnit"
@@ -49,7 +50,7 @@
 <!--Outdoor Unit-->
 
 <TextView
-    android:id="@+id/TextViewTitle"
+    android:id="@+id/OutdoorUnitTitle"
     android:layout_width="310dp"
     android:layout_height="wrap_content"
     android:text="@string/OutdoorUnit"
@@ -84,7 +85,7 @@
 <!--Carbon Monoxide Reading-->
 
 <TextView
-    android:id="@+id/TextViewTitle"
+    android:id="@+id/COReadingTitle"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="@string/COReading"
@@ -112,7 +113,7 @@
 
 
 <TextView
-    android:id="@+id/TextViewTitle"
+    android:id="@+id/TemperatureRiseTitle"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="@string/TemperatureRise"
@@ -141,7 +142,7 @@
 
 
 <TextView
-    android:id="@+id/TextViewTitle"
+    android:id="@+id/OperatingRangeTitle"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="@string/OperatingRange"
@@ -149,7 +150,7 @@
 </TextView>
 
 <TextView
-    android:id="@+id/TextViewTitle"
+    android:id="@+id/OperatingRangeIndoorTitle"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="@string/IndoorUnit"
@@ -173,7 +174,7 @@
 </EditText>
 
 <TextView
-    android:id="@+id/TextViewTitle"
+    android:id="@+id/OperatingRangeOutdoorTitle"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="@string/OutdoorUnit"
@@ -202,7 +203,7 @@
 
 
 <TextView
-    android:id="@+id/TextViewTitle"
+    android:id="@+id/GasPressureTitle"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="@string/GasPresure"
@@ -223,7 +224,7 @@
 
 
 <TextView
-    android:id="@+id/TextViewTitle" 
+    android:id="@+id/FilterSizeTitle" 
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="@string/FilterSize"

@@ -24,7 +24,6 @@ public class MainActivity extends Activity{
 			public void onClick(View v) {
 				// Switch Activities here
 				startActivity(new Intent(getApplicationContext(), NewForm.class));
-				
 			}
 		});
 		

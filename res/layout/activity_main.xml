@@ -7,7 +7,7 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:orientation="vertical"
-        android:layout_height="fill_parent">
+        android:layout_height="wrap_content">
 
 <!--Indoor Unit-->
 
@@ -15,7 +15,7 @@
     		android:id="@+id/newFormButton"
     		android:layout_width="wrap_content"
     		android:layout_height="wrap_content"
-    		android:text="New Form" />
+    		android:text="@string/NewForm" />
     </LinearLayout>
 </ScrollView>
 
