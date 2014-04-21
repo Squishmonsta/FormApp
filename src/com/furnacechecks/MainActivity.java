@@ -10,6 +10,7 @@ import android.widget.Button;
 public class MainActivity extends Activity{
 	
 	private Button mNewFormButton;
+	private Button mViewFormsButton;
 	
 	@Override
 	protected void onCreate (Bundle savedInstanceState){
@@ -22,8 +23,18 @@ public class MainActivity extends Activity{
 			
 			@Override
 			public void onClick(View v) {
-				// Switch Activities here
+				// Switch Activities to activity_newform and NewForm.java
 				startActivity(new Intent(getApplicationContext(), NewForm.class));
+			}
+		});
+		
+		mViewFormsButton = (Button) findViewById(R.id.viewFormsButton);
+		mViewFormsButton.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// Switch Activities to activity_viewforms and ViewForms.java
+				startActivity(new Intent(getApplicationContext(), ViewForms.class));
 			}
 		});
 		

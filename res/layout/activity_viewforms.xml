@@ -8,20 +8,7 @@
         android:layout_width="fill_parent"
         android:orientation="vertical"
         android:layout_height="wrap_content">
-
-<!--Indoor Unit-->
-
- 		<Button
-    		android:id="@+id/newFormButton"
-    		android:layout_width="wrap_content"
-    		android:layout_height="wrap_content"
-    		android:text="@string/NewForm" />
-
- 		<Button
- 		    android:id="@+id/viewFormsButton"
- 		    android:layout_width="wrap_content"
- 		    android:layout_height="wrap_content"
- 		    android:text="@string/ViewForms" />
+        
 
     </LinearLayout>
 </ScrollView>
