@@ -24,32 +24,34 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int FilterHeigth=0x7f080013;
-        public static final int FilterLength=0x7f080011;
-        public static final int FilterWidth=0x7f080012;
-        public static final int FluGasses=0x7f080009;
-        public static final int GasPresure=0x7f080010;
-        public static final int IndoorHigh=0x7f08000c;
-        public static final int IndoorLow=0x7f08000d;
-        public static final int IndoorMake=0x7f080002;
-        public static final int IndoorModel=0x7f080003;
-        public static final int IndoorSerial=0x7f080004;
-        public static final int IndoorTempRise=0x7f08000a;
-        public static final int OutdoorHigh=0x7f08000e;
-        public static final int OutdoorLow=0x7f08000f;
-        public static final int OutdoorMake=0x7f080005;
-        public static final int OutdoorModel=0x7f080006;
-        public static final int OutdoorSerial=0x7f080007;
-        public static final int OutdoorTempRise=0x7f08000b;
+        public static final int FilterHeigth=0x7f080014;
+        public static final int FilterLength=0x7f080012;
+        public static final int FilterWidth=0x7f080013;
+        public static final int FluGasses=0x7f08000a;
+        public static final int GasPresure=0x7f080011;
+        public static final int IndoorHigh=0x7f08000d;
+        public static final int IndoorLow=0x7f08000e;
+        public static final int IndoorMake=0x7f080003;
+        public static final int IndoorModel=0x7f080004;
+        public static final int IndoorSerial=0x7f080005;
+        public static final int IndoorTempRise=0x7f08000b;
+        public static final int OutdoorHigh=0x7f08000f;
+        public static final int OutdoorLow=0x7f080010;
+        public static final int OutdoorMake=0x7f080006;
+        public static final int OutdoorModel=0x7f080007;
+        public static final int OutdoorSerial=0x7f080008;
+        public static final int OutdoorTempRise=0x7f08000c;
         public static final int ScrollView01=0x7f080000;
-        public static final int SupplyAir=0x7f080008;
-        public static final int TextViewTitle=0x7f080001;
-        public static final int action_settings=0x7f080015;
-        public static final int section_label=0x7f080014;
+        public static final int SupplyAir=0x7f080009;
+        public static final int TextViewTitle=0x7f080002;
+        public static final int action_settings=0x7f080016;
+        public static final int newFormButton=0x7f080001;
+        public static final int section_label=0x7f080015;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int fragment_main_dummy=0x7f030001;
+        public static final int activity_newform=0x7f030001;
+        public static final int fragment_main_dummy=0x7f030002;
     }
     public static final class menu {
         public static final int main=0x7f070000;

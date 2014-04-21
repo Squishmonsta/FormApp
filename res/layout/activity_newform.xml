@@ -1,0 +1,260 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:layout_height="fill_parent">
+ 
+<!--Put form controls here-->
+
+<!--Indoor Unit-->
+ 
+<TextView
+    android:id="@+id/TextViewTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/IndoorUnit"
+    android:textSize="10pt">
+</TextView>
+
+<EditText
+    android:id="@+id/IndoorMake"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/Make"
+    >
+</EditText>
+
+<EditText
+    android:id="@+id/IndoorModel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/Model"
+    >
+</EditText>
+
+<EditText
+    android:id="@+id/IndoorSerial"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/SerialNumber"
+    >
+</EditText>
+
+
+<!--Outdoor Unit-->
+
+<TextView
+    android:id="@+id/TextViewTitle"
+    android:layout_width="310dp"
+    android:layout_height="wrap_content"
+    android:text="@string/OutdoorUnit"
+    android:textSize="10pt" >
+
+</TextView>
+
+<EditText
+    android:id="@+id/OutdoorMake"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/Make"
+    >
+</EditText>
+
+<EditText
+    android:id="@+id/OutdoorModel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/Model"
+    >
+</EditText>
+
+<EditText
+    android:id="@+id/OutdoorSerial"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/SerialNumber"
+    >
+</EditText>
+
+<!--Carbon Monoxide Reading-->
+
+<TextView
+    android:id="@+id/TextViewTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/COReading"
+    android:textSize="10pt">
+</TextView>
+
+<EditText
+    android:id="@+id/SupplyAir"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/SupplyAir"
+    >
+</EditText>
+
+<EditText
+    android:id="@+id/FluGasses"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/FluGasses"
+    >
+</EditText>
+
+
+<!--Temperature Rise-->
+
+
+<TextView
+    android:id="@+id/TextViewTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/TemperatureRise"
+    android:textSize="10pt">
+</TextView>
+
+
+<EditText
+    android:id="@+id/IndoorTempRise"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/IndoorRise"
+    >
+</EditText>
+
+<EditText
+    android:id="@+id/OutdoorTempRise"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/OutdoorRise"
+    >
+</EditText>
+
+
+<!--Operating Range-->
+
+
+<TextView
+    android:id="@+id/TextViewTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/OperatingRange"
+    android:textSize="10pt">
+</TextView>
+
+<TextView
+    android:id="@+id/TextViewTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/IndoorUnit"
+    android:textSize="6pt">
+</TextView>
+
+<EditText
+    android:id="@+id/IndoorHigh"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/High"
+    >
+</EditText>
+
+<EditText
+    android:id="@+id/IndoorLow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/Low"
+    >
+</EditText>
+
+<TextView
+    android:id="@+id/TextViewTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/OutdoorUnit"
+    android:textSize="6pt">
+</TextView>
+
+<EditText
+    android:id="@+id/OutdoorHigh"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/High"
+    >
+</EditText>
+
+<EditText
+    android:id="@+id/OutdoorLow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/Low"
+    >
+</EditText>
+
+
+
+<!--Gas Pressure-->
+
+
+<TextView
+    android:id="@+id/TextViewTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/GasPresure"
+    android:textSize="10pt">
+</TextView>
+
+<EditText
+    android:id="@+id/GasPresure"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/GP"
+    >
+    
+</EditText>
+
+
+<!--Filter Size-->
+
+
+<TextView
+    android:id="@+id/TextViewTitle" 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/FilterSize"
+    android:textSize="10pt">
+</TextView>
+
+<EditText
+    android:id="@+id/FilterLength" 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/Length"
+    >
+</EditText>
+
+<EditText
+    android:id="@+id/FilterWidth" 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/Width"
+    >
+</EditText>
+
+<EditText
+    android:id="@+id/FilterHeigth"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/Height"
+    >
+</EditText>
+
+    </LinearLayout>
+</ScrollView>
+
+
