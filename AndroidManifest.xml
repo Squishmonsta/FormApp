@@ -23,6 +23,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".NewForm" android:label="@string/app_name"/>
+        <activity android:name=".ViewForms" android:label="@string/app_name"/>
     </application>
 
 </manifest>
