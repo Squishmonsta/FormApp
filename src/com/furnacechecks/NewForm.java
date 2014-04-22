@@ -7,19 +7,23 @@ import android.widget.Button;
 
 public class NewForm extends Activity {
 	
-	private Button saveButton;
+	private Button msaveButton;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_newform);
 		
-		saveButton = (Button) findViewById(R.id.saveButton);
-		saveButton.setOnClickListener(new View.OnClickListener() {
+		msaveButton = (Button) findViewById(R.id.saveButton);
+		msaveButton.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
 			public void onClick(View v) {
-				//save actions
+				/*save actions:
+				 * 	 1)extract data
+				 *   2)save to XML doc
+				 *   3) display some screen?
+				 */
 				
 			}
 		});
