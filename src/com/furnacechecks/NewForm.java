@@ -36,7 +36,7 @@ public class NewForm extends Activity {
 				mIndoorMakeAnswerText.setText(dataExtracted);
 				
 				
-				//TEST FOR JOSH!!!!
+				
 			}
 		});
 		
