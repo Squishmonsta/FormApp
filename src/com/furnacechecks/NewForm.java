@@ -28,9 +28,9 @@ public class NewForm extends Activity {
 				 */
 				
 				//extract data test - This currently crashes app
-				String dataExtracted;
+				String dataExtracted = "";
 				mIndoorMakeAnswerText = (TextView) findViewById(R.id.IndoorMake);
-				/*THIS LINE CRASHES IT*/dataExtracted = (String) mIndoorMakeAnswerText.getText();
+				///*THIS LINE CRASHES IT*/dataExtracted = (String) mIndoorMakeAnswerText.getText();
 				dataExtracted+="Jason";
 				System.out.println(dataExtracted);
 				mIndoorMakeAnswerText.setText(dataExtracted);
