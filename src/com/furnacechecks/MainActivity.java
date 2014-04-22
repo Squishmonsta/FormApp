@@ -12,6 +12,7 @@ public class MainActivity extends Activity{
 	private Button mNewFormButton;
 	private Button mViewFormsButton;
 	
+	
 	@Override
 	protected void onCreate (Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
