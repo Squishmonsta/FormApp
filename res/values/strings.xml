@@ -24,5 +24,6 @@
 	<string name="Length">Length</string>
 	<string name="Width">Width</string>
 	<string name="Height">Height</string>
+	<string name="Save">Save</string>
 
 </resources>

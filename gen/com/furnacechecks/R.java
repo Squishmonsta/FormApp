@@ -52,9 +52,13 @@ public final class R {
         public static final int ScrollView01=0x7f080000;
         public static final int SupplyAir=0x7f08000c;
         public static final int TemperatureRiseTitle=0x7f08000e;
-        public static final int action_settings=0x7f08001f;
+        public static final int action_settings=0x7f080023;
         public static final int newFormButton=0x7f080001;
-        public static final int section_label=0x7f08001e;
+        public static final int saveButton=0x7f080020;
+        public static final int saveButtonLayout=0x7f08001e;
+        public static final int section_label=0x7f080022;
+        public static final int view1=0x7f08001f;
+        public static final int view2=0x7f080021;
         public static final int viewFormsButton=0x7f080002;
     }
     public static final class layout {
@@ -84,6 +88,7 @@ public final class R {
         public static final int OperatingRange=0x7f05000f;
         public static final int OutdoorRise=0x7f05000e;
         public static final int OutdoorUnit=0x7f050008;
+        public static final int Save=0x7f050018;
         public static final int SerialNumber=0x7f050007;
         public static final int SupplyAir=0x7f05000a;
         public static final int TemperatureRise=0x7f05000c;
