@@ -35,6 +35,8 @@ public class NewForm extends Activity {
 				System.out.println(dataExtracted);
 				mIndoorMakeAnswerText.setText(dataExtracted);
 				
+				
+				
 			}
 		});
 		
