@@ -4,12 +4,12 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
+import android.widget.EditText;
 
 public class NewForm extends Activity {
 	
 	private Button msaveButton;
-	private TextView mIndoorMakeAnswerText;
+	private EditText mIndoorMakeAnswerText;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState){
@@ -29,10 +29,10 @@ public class NewForm extends Activity {
 				
 				//extract data test - This currently crashes app
 				String dataExtracted = "";
-				mIndoorMakeAnswerText = (TextView) findViewById(R.id.IndoorMake);
+				mIndoorMakeAnswerText = (EditText) findViewById(R.id.IndoorMake);
+				dataExtracted = mIndoorMakeAnswerText.getText().toString();
 				///*THIS LINE CRASHES IT*/dataExtracted = (String) mIndoorMakeAnswerText.getText();
 				dataExtracted+="Jason";
-				System.out.println(dataExtracted);
 				mIndoorMakeAnswerText.setText(dataExtracted);
 				
 				
