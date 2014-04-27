@@ -10,6 +10,7 @@ public class NewForm extends Activity {
 	
 	private Button msaveButton;
 	private EditText mIndoorMakeAnswerText;
+	private EditText mFormTitle;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState){
@@ -27,13 +28,14 @@ public class NewForm extends Activity {
 				 *   3) display some screen?
 				 */
 				
-				//extract data test - This currently crashes app
-				String dataExtracted = "";
-				mIndoorMakeAnswerText = (EditText) findViewById(R.id.IndoorMake);
-				dataExtracted = mIndoorMakeAnswerText.getText().toString();
-				///*THIS LINE CRASHES IT*/dataExtracted = (String) mIndoorMakeAnswerText.getText();
-				dataExtracted+="Jason";
-				mIndoorMakeAnswerText.setText(dataExtracted);
+				//Example of getting and setting form data
+				String formTitleString = "";
+				mFormTitle = (EditText) findViewById(R.id.FormTitle);
+				formTitleString = mFormTitle.getText().toString();
+				formTitleString+="Jason";
+				mFormTitle.setText(formTitleString);
+				
+				
 				
 				
 				

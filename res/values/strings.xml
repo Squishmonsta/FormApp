@@ -4,6 +4,7 @@
     <string name="NewForm">New Form</string>
     <string name= "ViewForms">View Forms</string>
     <string name="action_settings">Settings</string>
+    <string name="FormTitle">Form Title</string>
     <string name="IndoorUnit">Indoor Unit</string>
     <string name="Make">Make</string>
     <string name="Model">Model</string>
