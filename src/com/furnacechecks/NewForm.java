@@ -46,7 +46,7 @@ public class NewForm extends Activity {
 				String xmlFile = "<form> <title>" + mFormTitle + "</title> </form>";
 				try {
 					FileOutputStream fos = openFileOutput(mFormTitle + ".xml",
-					        Context.MODE_APPEND | Context.MODE_WORLD_READABLE);
+					        Context.MODE_APPEND | Context.MODE_WORLD_READABLE); //only a security warning. It's fine
 					fos.write(xmlFile.getBytes());
 					fos.close();
 					

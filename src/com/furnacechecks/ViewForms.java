@@ -19,7 +19,8 @@ public class ViewForms extends Activity {
 		
 		//TODO: Open resource folder where forms are kept and display list of available forms
 		
-		String formId = "blah"; //Need to access the onclick variable to extract the correct form
+		String formId = "blah"; //TODO Need to access the onclick variable to extract the correct form
+		String xml = "";
 		
 		try {
 		    BufferedReader inputReader = new BufferedReader(new InputStreamReader(
@@ -29,7 +30,7 @@ public class ViewForms extends Activity {
 		    while ((inputString = inputReader.readLine()) != null) {
 		        stringBuffer.append(inputString + "\n");
 		    }
-			lblTextViewOne.setText(stringBuffer.toString());
+			xml = stringBuffer.toString();
 		} catch (IOException e) {
 		    e.printStackTrace();
 		}
