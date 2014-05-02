@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.security.Timestamp;
 
 import android.app.Activity;
 import android.content.Context;
@@ -34,35 +35,53 @@ public class NewForm extends Activity {
 				String formTitleString = "";
 				mFormTitle = (EditText) findViewById(R.id.FormTitle);
 				formTitleString = mFormTitle.getText().toString();
-				formTitleString+="Jason";
+				Long tsLong = System.currentTimeMillis()/1000;
+				String ts = tsLong.toString();
+				formTitleString+= formTitleString + ts;
 				mFormTitle.setText(formTitleString);
 				
+				String IndoorUnit = getResources().getString(R.string.IndoorUnit);
+				String Make = getResources().getString(R.string.Make);
+				String Model = getResources().getString(R.string.Model);
+				String SerialNumber = getResources().getString(R.string.SerialNumber);
+				String OutdoorUnit = getResources().getString(R.string.OutdoorUnit);
+				String COReading = getResources().getString(R.string.COReading);
+				String SupplyAir = getResources().getString(R.string.SupplyAir);
+				String FluGasses = getResources().getString(R.string.FluGasses);
+				String TemperatureRise = getResources().getString(R.string.TemperatureRise);
+				String IndoorRise = getResources().getString(R.string.IndoorRise);
+				String OutdoorRise = getResources().getString(R.string.OutdoorRise);
+				String OperatingRange = getResources().getString(R.string.OperatingRange);
+				String High = getResources().getString(R.string.High);
+				String Low = getResources().getString(R.string.Low);
+				String GasPresure = getResources().getString(R.string.GasPresure);
+				String GP = getResources().getString(R.string.GP);
+				String FilterSize = getResources().getString(R.string.FilterSize);
+				String Length = getResources().getString(R.string.Length);
+				String Width = getResources().getString(R.string.Width);
+				String Height = getResources().getString(R.string.Height);
+				
+				
 				/*save actions:
-				 * 	 1)extract data
-				 *   2)save to XML doc *Baseline code*
+				 * 	 1)extract data //DONE
+				 *   2)save to XML doc *Baseline code added*
 				 *   3) display some screen?
 				 */
 				//2
-				String xmlFile = "<form> <title>" + mFormTitle + "</title> </form>";
+				
+				
+				String xmlFile = "<form> <title>" + mFormTitle + "</title> <file> " + IndoorUnit + Make + Model + SerialNumber + OutdoorUnit
+						+ COReading + SupplyAir + FluGasses + TemperatureRise + IndoorRise + OutdoorRise + OperatingRange +
+						High + Low + GasPresure + GP + FilterSize + Length + Width + Height + " </file> </form>";
 				try {
 					FileOutputStream fos = openFileOutput(mFormTitle + ".xml",
 					        Context.MODE_APPEND | Context.MODE_WORLD_READABLE); //only a security warning. It's fine
 					fos.write(xmlFile.getBytes());
 					fos.close();
-					
-					String storageState = Environment.getExternalStorageState();
-				    if (storageState.equals(Environment.MEDIA_MOUNTED)) {
-				        File file = new File(getExternalFilesDir(null),
-				                "DayTwentyTwoFileTwo");
-				        FileOutputStream fos2 = new FileOutputStream(file);
-				        fos2.write(xmlFile.getBytes());
-				        fos2.close();
-				    }
+				
 				} catch (FileNotFoundException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				} catch (IOException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 			}
