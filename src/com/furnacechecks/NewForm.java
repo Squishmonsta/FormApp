@@ -1,15 +1,11 @@
 package com.furnacechecks;
 
-import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.security.Timestamp;
 
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
-import android.os.Environment;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -37,7 +33,7 @@ public class NewForm extends Activity {
 				formTitleString = mFormTitle.getText().toString();
 				Long tsLong = System.currentTimeMillis()/1000;
 				String ts = tsLong.toString();
-				formTitleString+= formTitleString + ts;
+				formTitleString += formTitleString + ts;
 				mFormTitle.setText(formTitleString);
 				
 				String IndoorUnit = getResources().getString(R.string.IndoorUnit);
@@ -79,8 +75,6 @@ public class NewForm extends Activity {
 					fos.write(xmlFile.getBytes());
 					fos.close();
 				
-				} catch (FileNotFoundException e) {
-					e.printStackTrace();
 				} catch (IOException e) {
 					e.printStackTrace();
 				}
