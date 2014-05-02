@@ -66,9 +66,12 @@ public class NewForm extends Activity {
 				//2
 				
 				
-				String xmlFile = "<form> <title>" + mFormTitle + "</title> <file> " + IndoorUnit + Make + Model + SerialNumber + OutdoorUnit
-						+ COReading + SupplyAir + FluGasses + TemperatureRise + IndoorRise + OutdoorRise + OperatingRange +
-						High + Low + GasPresure + GP + FilterSize + Length + Width + Height + " </file> </form>";
+				String xmlFile = "<form> <title>"+mFormTitle+"</title> <file> <IU>"+IndoorUnit+"</IU> <Make>"+Make+"</Make> <Model"+Model+"</Model> " +
+						"<SerialNum>"+SerialNumber+"</SerialNum> <OU>"+OutdoorUnit+"</OU> <CORead>"+COReading+"</CORead> <Air>"+SupplyAir+
+						"</Air> <FluGas>"+FluGasses+"</FluGas> <TempRise>"+TemperatureRise+"</TempRise> <InRise>"+IndoorRise+"</InRise> <OutRise>"+
+						OutdoorRise+"</OutRise> <Operating>"+OperatingRange+"</Operating> <High>"+High+"</High> <Low>"+Low+"</Low> " +
+						"<GasPresure>"+GasPresure+"</GasPresure> <GP>"+GP+"</GP> <FilterSize>"+FilterSize+"</FilterSize> <Length>"+Length
+						+"</Length> <Width>"+Width+"</Width> <Height>"+Height+"</Heigth> </file> </form>";
 				try {
 					FileOutputStream fos = openFileOutput(mFormTitle + ".xml",
 					        Context.MODE_APPEND | Context.MODE_WORLD_READABLE); //only a security warning. It's fine
