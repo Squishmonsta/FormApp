@@ -27,14 +27,17 @@ public class NewForm extends Activity {
 			@Override
 			public void onClick(View v) {
 				
-				//Example of getting and setting form data
+				
 				String formTitleString = "";
+				//Gets form title entered by user
 				mFormTitle = (EditText) findViewById(R.id.FormTitle);
 				formTitleString = mFormTitle.getText().toString();
 				Long tsLong = System.currentTimeMillis()/1000;
 				String ts = tsLong.toString();
-				formTitleString += formTitleString + ts;
+				//appends time stamp to title (unique every 1 second)
+				formTitleString += ts;
 				mFormTitle.setText(formTitleString);
+				String xmlFileName = formTitleString + ".xml";
 				
 				String IndoorUnit = getResources().getString(R.string.IndoorUnit);
 				String Make = getResources().getString(R.string.Make);
@@ -72,15 +75,19 @@ public class NewForm extends Activity {
 						OutdoorRise+"</OutRise> <Operating>"+OperatingRange+"</Operating> <High>"+High+"</High> <Low>"+Low+"</Low> " +
 						"<GasPresure>"+GasPresure+"</GasPresure> <GP>"+GP+"</GP> <FilterSize>"+FilterSize+"</FilterSize> <Length>"+Length
 						+"</Length> <Width>"+Width+"</Width> <Height>"+Height+"</Heigth> </file> </form>";
+				
 				try {
-					FileOutputStream fos = openFileOutput(mFormTitle + ".xml",
+					FileOutputStream outputStream = openFileOutput(xmlFileName,
 					        Context.MODE_APPEND | Context.MODE_WORLD_READABLE); //only a security warning. It's fine
-					fos.write(xmlFile.getBytes());
-					fos.close();
+					outputStream.write(xmlFile.getBytes());
+					outputStream.flush();
+					outputStream.close();
 				
 				} catch (IOException e) {
 					e.printStackTrace();
 				}
+				
+				
 			}
 		});
 		
