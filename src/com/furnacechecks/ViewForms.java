@@ -5,11 +5,11 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.StringReader;
 
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
+//import javax.xml.parsers.DocumentBuilder;
+//import javax.xml.parsers.DocumentBuilderFactory;
 
-import org.w3c.dom.Document;
-import org.w3c.dom.NodeList;
+//import org.w3c.dom.Document;
+//import org.w3c.dom.NodeList;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserFactory;
 
@@ -95,8 +95,8 @@ public class ViewForms extends Activity {
 		
 		//TODO: Open resource folder where forms are kept and display list of available forms
 		
-		String formId = "blah"; //TODO Need to access the onclick variable to extract the correct form
-		String xml = "";
+		//String formId = "blah"; //TODO Need to access the onclick variable to extract the correct form
+		//String xml = "";
 		/*
 		try {
 		    BufferedReader inputReader = new BufferedReader(new InputStreamReader(
