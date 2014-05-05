@@ -67,8 +67,10 @@ public class ViewForms extends Activity {
 	         int eventType = xpp.getEventType();
 	         int counter = 0;
 	         while (eventType != XmlPullParser.END_DOCUMENT) {
-	          if(eventType == XmlPullParser.START_DOCUMENT) {
-	              counter++;
+	          if(eventType == XmlPullParser.START_TAG) {
+	        	  if (xpp.getAttributeName(eventType).equalsIgnoreCase("form")) {
+		              counter++;
+	        	  }
 	          }
 	          eventType = xpp.next();
 	         }
