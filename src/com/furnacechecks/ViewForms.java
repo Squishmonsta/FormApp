@@ -74,6 +74,7 @@ public class ViewForms extends Activity {
 	          }
 	          eventType = xpp.next();
 	         }
+	         br.close();
 			
 			mOutput = "Test"+counter;
 			//mOutput = "TEST";
