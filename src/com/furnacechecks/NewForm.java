@@ -45,26 +45,9 @@ public class NewForm extends Activity {
 				mFormTitle.setText(formTitleString);
 				String xmlFileName = formTitleString + ".xml";
 				
-				String IndoorUnit = getResources().getString(R.string.IndoorUnit);
-				String Make = getResources().getString(R.string.Make);
-				String Model = getResources().getString(R.string.Model);
-				String SerialNumber = getResources().getString(R.string.SerialNumber);
-				String OutdoorUnit = getResources().getString(R.string.OutdoorUnit);
-				String COReading = getResources().getString(R.string.COReading);
-				String SupplyAir = getResources().getString(R.string.SupplyAir);
-				String FluGasses = getResources().getString(R.string.FluGasses);
-				String TemperatureRise = getResources().getString(R.string.TemperatureRise);
-				String IndoorRise = getResources().getString(R.string.IndoorRise);
-				String OutdoorRise = getResources().getString(R.string.OutdoorRise);
-				String OperatingRange = getResources().getString(R.string.OperatingRange);
-				String High = getResources().getString(R.string.High);
-				String Low = getResources().getString(R.string.Low);
-				String GasPresure = getResources().getString(R.string.GasPressure);
-				String GP = getResources().getString(R.string.GP);
-				String FilterSize = getResources().getString(R.string.FilterSize);
-				String Length = getResources().getString(R.string.Length);
-				String Width = getResources().getString(R.string.Width);
-				String Height = getResources().getString(R.string.Height);
+				//Example of getting string resource
+				//String IndoorUnit = getResources().getString(R.string.IndoorUnit);
+				
 				
 				EditText EindoorMake = (EditText)findViewById(R.id.IndoorMake);
 				String indoorMake = EindoorMake.getText().toString();
@@ -121,16 +104,6 @@ public class NewForm extends Activity {
 				String filterHeight = EfilterHeight.getText().toString();
 				
 				
-				
-				
-				
-				
-				
-				/*save actions:
-				 * 	 1)extract data
-				 *   2)save to XML doc
-				 *   3) display some screen?
-				 */
 				//2
 				
 				
