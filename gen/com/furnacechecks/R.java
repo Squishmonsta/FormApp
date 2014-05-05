@@ -76,6 +76,7 @@ public final class R {
         public static final int COReading=0x7f05000a;
         public static final int FilterSize=0x7f050015;
         public static final int FluGasses=0x7f05000c;
+        public static final int FormListFile=0x7f05001a;
         public static final int FormTitle=0x7f050004;
         public static final int GP=0x7f050014;
         public static final int GasPressure=0x7f050013;

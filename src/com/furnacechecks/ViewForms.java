@@ -1,14 +1,15 @@
 package com.furnacechecks;
 
-import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+
+import org.w3c.dom.Document;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.os.Environment;
 
 public class ViewForms extends Activity {
 	
@@ -17,11 +18,22 @@ public class ViewForms extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_viewforms);
 		
+		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+		
+		try {
+			DocumentBuilder builder = dbf.newDocumentBuilder();
+			File formListFile = new File(getResources().getString(R.string.FormListFile));
+			Document formListDoc = builder.parse(formListFile);
+		} catch (Exception e1) {
+			e1.printStackTrace();
+		}
+		
+		
 		//TODO: Open resource folder where forms are kept and display list of available forms
 		
 		String formId = "blah"; //TODO Need to access the onclick variable to extract the correct form
 		String xml = "";
-		
+		/*
 		try {
 		    BufferedReader inputReader = new BufferedReader(new InputStreamReader(
 		            openFileInput(formId + ".xml")));
@@ -34,5 +46,8 @@ public class ViewForms extends Activity {
 		} catch (IOException e) {
 		    e.printStackTrace();
 		}
+		*/
+		
 		}
+		
 	}
