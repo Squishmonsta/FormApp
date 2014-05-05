@@ -19,7 +19,7 @@
 	<string name="OperatingRange">Operating Range</string>
 	<string name="High">High</string>
 	<string name="Low">Low</string>
-	<string name="GasPresure">Gas Presure</string>
+	<string name="GasPressure">Gas Pressure</string>
 	<string name="GP">(only needed for Natural Gas and LP units)</string>
 	<string name="FilterSize">Filter Size</string>
 	<string name="Length">Length</string>

@@ -59,7 +59,7 @@ public class NewForm extends Activity {
 				String OperatingRange = getResources().getString(R.string.OperatingRange);
 				String High = getResources().getString(R.string.High);
 				String Low = getResources().getString(R.string.Low);
-				String GasPresure = getResources().getString(R.string.GasPresure);
+				String GasPresure = getResources().getString(R.string.GasPressure);
 				String GP = getResources().getString(R.string.GP);
 				String FilterSize = getResources().getString(R.string.FilterSize);
 				String Length = getResources().getString(R.string.Length);

@@ -32,8 +32,8 @@ public final class R {
         public static final int FluGasses=0x7f08000f;
         public static final int FormTitle=0x7f080004;
         public static final int FormTitleTitle=0x7f080003;
+        public static final int GasPressure=0x7f08001b;
         public static final int GasPressureTitle=0x7f08001a;
-        public static final int GasPresure=0x7f08001b;
         public static final int IndoorHigh=0x7f080015;
         public static final int IndoorLow=0x7f080016;
         public static final int IndoorMake=0x7f080006;
@@ -78,7 +78,7 @@ public final class R {
         public static final int FluGasses=0x7f05000c;
         public static final int FormTitle=0x7f050004;
         public static final int GP=0x7f050014;
-        public static final int GasPresure=0x7f050013;
+        public static final int GasPressure=0x7f050013;
         public static final int Height=0x7f050018;
         public static final int High=0x7f050011;
         public static final int IndoorRise=0x7f05000e;
