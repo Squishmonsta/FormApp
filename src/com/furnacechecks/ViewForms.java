@@ -4,14 +4,21 @@ import java.io.File;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
 
 import org.w3c.dom.Document;
+import org.w3c.dom.NodeList;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.TextView;
 
 public class ViewForms extends Activity {
+	private TextView mViewOutput;
+	private Button mTestButton;
+	private String mOutput;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState){
@@ -21,9 +28,36 @@ public class ViewForms extends Activity {
 		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 		
 		try {
+			
 			DocumentBuilder builder = dbf.newDocumentBuilder();
-			File formListFile = new File(getResources().getString(R.string.FormListFile));
+			File formListFile = new File("formList.xml");
+			//File formListFile = new File(getResources().getString(R.string.FormListFile));
+			
+			//The following line crashes it!! :(
 			Document formListDoc = builder.parse(formListFile);
+			/*
+			formListDoc.normalize();
+			NodeList formNodes = formListDoc.getElementsByTagName("form");
+			int counter = 0;
+			for(int i=0; i< formNodes.getLength(); i++){
+				counter++;
+			}
+			
+			mOutput = "Test"+counter;
+			*/
+			mOutput = "TEST";
+			
+			mViewOutput = (TextView) findViewById(R.id.viewOutputText);
+			mTestButton = (Button) findViewById(R.id.testButton);
+			mTestButton.setOnClickListener(new OnClickListener() {
+				
+				@Override
+				public void onClick(View v) {
+					mViewOutput.setText(mOutput);
+					
+				}
+			});
+			
 		} catch (Exception e1) {
 			e1.printStackTrace();
 		}

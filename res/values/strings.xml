@@ -26,6 +26,7 @@
 	<string name="Width">Width</string>
 	<string name="Height">Height</string>
 	<string name="Save">Save</string>
-	<string name="FormListFile">FormList.xml</string>
+	<string name="FormListFile">formList.xml</string>
+	<string name = "Empty"></string>
 
 </resources>

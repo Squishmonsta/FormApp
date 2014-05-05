@@ -54,14 +54,16 @@ public final class R {
         public static final int ScrollView01=0x7f080000;
         public static final int SupplyAir=0x7f08000e;
         public static final int TemperatureRiseTitle=0x7f080010;
-        public static final int action_settings=0x7f080025;
+        public static final int action_settings=0x7f080027;
         public static final int newFormButton=0x7f080001;
         public static final int saveButton=0x7f080022;
         public static final int saveButtonLayout=0x7f080020;
-        public static final int section_label=0x7f080024;
+        public static final int section_label=0x7f080026;
+        public static final int testButton=0x7f080025;
         public static final int view1=0x7f080021;
         public static final int view2=0x7f080023;
         public static final int viewFormsButton=0x7f080002;
+        public static final int viewOutputText=0x7f080024;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -74,6 +76,7 @@ public final class R {
     }
     public static final class string {
         public static final int COReading=0x7f05000a;
+        public static final int Empty=0x7f05001b;
         public static final int FilterSize=0x7f050015;
         public static final int FluGasses=0x7f05000c;
         public static final int FormListFile=0x7f05001a;
