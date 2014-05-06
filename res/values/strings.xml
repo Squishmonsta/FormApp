@@ -30,6 +30,9 @@
 	<string name="Save">Save</string>
 	<string name="FormListFile">formList.xml</string>
 	<string name = "Empty"></string>
+	<string name = "MainMenu">Main Menu</string>
+	<string name="SampleFormFile">ClassDemo1399399889.xml</string>
+	
 	<color name="blue">#0000FF</color>
 	<color name="white">#FFFFFF</color>
 </resources>

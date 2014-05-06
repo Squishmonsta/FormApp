@@ -12,15 +12,28 @@
         <TextView
             android:id="@+id/viewOutputText"
             android:layout_width="wrap_content"
-            android:layout_height="250dp"
+            android:layout_height="120dp"
             android:text="@string/Empty"
-            android:textSize="9pt" />
+            android:textSize="8pt" />
 
         <Button
-            android:id="@+id/testButton"
+            android:id="@+id/showForm"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Show Form List" />
+            android:text="Show Sample Form" />
+
+        <TextView
+            android:id="@+id/sampleForm"
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:text="@string/Empty"
+            android:textSize="8pt"  />
+
+        <Button
+            android:id="@+id/MainMenuButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/MainMenu" />
 
     </LinearLayout>
 </ScrollView>

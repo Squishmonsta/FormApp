@@ -10,6 +10,7 @@ import org.w3c.dom.Document;
 import org.xml.sax.InputSource;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -22,8 +23,10 @@ import android.widget.TextView;
 
 public class ViewForms extends Activity {
 	private TextView mViewOutput;
-	private Button mTestButton;
+	private Button mshowFormButton;
 	private String mOutput="test";
+	private Button mMainMenuButton;
+	private TextView mSampleView;
 	
 	//This method based on code from Pankaj Kumar--------------------------------------------
 	private static Document convertStringToDocument(String xmlStr) {
@@ -108,18 +111,41 @@ public class ViewForms extends Activity {
 			//mOutput = "TEST";
 			mOutput = formListString;
 			mViewOutput = (TextView) findViewById(R.id.viewOutputText);
-			mTestButton = (Button) findViewById(R.id.testButton);
-			mTestButton.setOnClickListener(new OnClickListener() {
+			mViewOutput.setText(mOutput);
+			mSampleView = (TextView) findViewById(R.id.sampleForm);
+			mshowFormButton = (Button) findViewById(R.id.showForm);
+			mshowFormButton.setOnClickListener(new OnClickListener() {
 				@Override
 				public void onClick(View v) {
-					mViewOutput.setText(mOutput);
 					
+					try{
+					FileInputStream xmlFileInputStream2 = openFileInput(getResources().getString(R.string.SampleFormFile));
+					StringBuilder xmlStringBuilder2 = new StringBuilder();
+					int ch2;
+					while((ch2 = xmlFileInputStream2.read()) != -1){
+					    xmlStringBuilder2.append((char)ch2);
+					}
+					String formString =  xmlStringBuilder2.toString();
+					mSampleView.setText(formString);
+					}
+					catch(Exception e){
+						e.printStackTrace();
+					}
 				}
 			});
 			
 		} catch (Exception e1) {
 			e1.printStackTrace();
 		}
+		
+		mMainMenuButton = (Button) findViewById(R.id.MainMenuButton);
+		mMainMenuButton.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View arg0) {
+				startActivity(new Intent(getApplicationContext(), MainActivity.class));
+				
+			}
+		});
 		
 		//TODO: Open resource folder where forms are kept and display list of available forms
 		

@@ -45,6 +45,7 @@ public final class R {
         public static final int IndoorSerial=0x7f090008;
         public static final int IndoorTempRise=0x7f090011;
         public static final int IndoorUnitTitle=0x7f090005;
+        public static final int MainMenuButton=0x7f090025;
         public static final int OperatingRangeTitle=0x7f090013;
         public static final int OutdoorHigh=0x7f090016;
         public static final int OutdoorLow=0x7f090017;
@@ -56,12 +57,13 @@ public final class R {
         public static final int ScrollView01=0x7f090000;
         public static final int SupplyAir=0x7f09000e;
         public static final int TemperatureRiseTitle=0x7f090010;
-        public static final int action_settings=0x7f090025;
+        public static final int action_settings=0x7f090027;
         public static final int newFormButton=0x7f090001;
+        public static final int sampleForm=0x7f090024;
         public static final int saveButton=0x7f090020;
         public static final int saveButtonLayout=0x7f09001e;
-        public static final int section_label=0x7f090024;
-        public static final int testButton=0x7f090023;
+        public static final int section_label=0x7f090026;
+        public static final int showForm=0x7f090023;
         public static final int view1=0x7f09001f;
         public static final int view2=0x7f090021;
         public static final int viewFormsButton=0x7f090002;
@@ -91,6 +93,7 @@ public final class R {
         public static final int IndoorRise=0x7f05000e;
         public static final int IndoorUnit=0x7f050005;
         public static final int Length=0x7f050018;
+        public static final int MainMenu=0x7f05001e;
         public static final int Make=0x7f050006;
         public static final int Model=0x7f050007;
         public static final int NewForm=0x7f050001;
@@ -99,6 +102,7 @@ public final class R {
         public static final int OutdoorLow=0x7f050014;
         public static final int OutdoorRise=0x7f05000f;
         public static final int OutdoorUnit=0x7f050009;
+        public static final int SampleFormFile=0x7f05001f;
         public static final int Save=0x7f05001b;
         public static final int SerialNumber=0x7f050008;
         public static final int SupplyAir=0x7f05000b;
