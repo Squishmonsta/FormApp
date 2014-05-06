@@ -1,9 +1,14 @@
 package com.furnacechecks;
 
-import java.io.InputStream;
+import java.io.FileInputStream;
+import java.io.StringReader;
 
-import org.xmlpull.v1.XmlPullParser;
-import org.xmlpull.v1.XmlPullParserFactory;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.NodeList;
+import org.xml.sax.InputSource;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -21,6 +26,28 @@ public class ViewForms extends Activity {
 	private Button mTestButton;
 	private String mOutput="test";
 	
+	//This method based on code from Pankaj Kumar--------------------------------------------
+	private static Document convertStringToDocument(String xmlStr) {
+        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();  
+        DocumentBuilder builder;  
+        try 
+        {  
+            builder = factory.newDocumentBuilder();  
+            Document xmlDoc = builder.parse( new InputSource( new StringReader( xmlStr ) ) );
+            xmlDoc.normalize();
+            return xmlDoc;
+        } catch (Exception e) {  
+            e.printStackTrace();  
+        } 
+        return null;
+    }
+	//----------------------------------------------------------------------------------
+	
+	
+	
+	
+	
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
@@ -30,7 +57,7 @@ public class ViewForms extends Activity {
 		try {
 			
 			//^^^^^^^^the first thing we have ever done to actually get the file^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-			/*
+			
 			FileInputStream xmlFileInputStream = openFileInput(getResources().getString(R.string.FormListFile));
 			StringBuilder xmlStringBuilder = new StringBuilder();
 			int ch;
@@ -38,8 +65,14 @@ public class ViewForms extends Activity {
 			    xmlStringBuilder.append((char)ch);
 			}
 			String formListString =  xmlStringBuilder.toString();
-			*/
+			
 			//^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+			
+			//getting a valid xml doc from the string
+			Document xmlDoc = convertStringToDocument(formListString);
+			NodeList formNodes = xmlDoc.getElementsByTagName("form");
+			//int counter = formNodes.getLength();
+			
 			
 			/*
 			BufferedReader br = new BufferedReader(new FileReader(formListFile));
@@ -50,6 +83,8 @@ public class ViewForms extends Activity {
 			}
 			*/
 			//XMLparser only need to check for <form> and </form>
+			//SOMETHING DOWN HERE CRASHES IT
+			/*
 			XmlPullParserFactory factory = XmlPullParserFactory.newInstance();
 			factory.setNamespaceAware(true);
 	        XmlPullParser xpp = factory.newPullParser();
@@ -65,8 +100,9 @@ public class ViewForms extends Activity {
 	        	}
 	        	eventType = xpp.next();
 	        }
-			mOutput = "Test"+counter;
-			//mOutput = "TEST";
+	        */
+			//mOutput = "Test"+counter;
+			mOutput = "TEST";
 			
 			mViewOutput = (TextView) findViewById(R.id.viewOutputText);
 			mTestButton = (Button) findViewById(R.id.testButton);
