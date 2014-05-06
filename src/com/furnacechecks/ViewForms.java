@@ -1,15 +1,7 @@
 package com.furnacechecks;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.StringReader;
+import java.io.InputStream;
 
-//import javax.xml.parsers.DocumentBuilder;
-//import javax.xml.parsers.DocumentBuilderFactory;
-
-//import org.w3c.dom.Document;
-//import org.w3c.dom.NodeList;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserFactory;
 
@@ -19,70 +11,66 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
+//import javax.xml.parsers.DocumentBuilder;
+//import javax.xml.parsers.DocumentBuilderFactory;
+//import org.w3c.dom.Document;
+//import org.w3c.dom.NodeList;
 
 public class ViewForms extends Activity {
 	private TextView mViewOutput;
 	private Button mTestButton;
-	private String mOutput;
+	private String mOutput="test";
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_viewforms);
 		
-		//DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 		
 		try {
+			
+			//^^^^^^^^the first thing we have ever done to actually get the file^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 			/*
-			DocumentBuilder builder = dbf.newDocumentBuilder();
-			//File formListFile = new File("formList.xml");
-			File formListFile = new File(getResources().getString(R.string.FormListFile));
-			
-			//The following line crashes it!! :(
-			Document formListDoc = builder.parse(formListFile);
-			
-			formListDoc.normalize();
-			NodeList formNodes = formListDoc.getElementsByTagName("form");
-			
-			int counter = 0;
-			for(int i=0; i< formNodes.getLength(); i++){
-				counter++;
+			FileInputStream xmlFileInputStream = openFileInput(getResources().getString(R.string.FormListFile));
+			StringBuilder xmlStringBuilder = new StringBuilder();
+			int ch;
+			while((ch = xmlFileInputStream.read()) != -1){
+			    xmlStringBuilder.append((char)ch);
 			}
+			String formListString =  xmlStringBuilder.toString();
 			*/
-			File formListFile = new File(getResources().getString(R.string.FormListFile));
+			//^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 			
-			//converts the xml files to a one line string
+			/*
 			BufferedReader br = new BufferedReader(new FileReader(formListFile));
 			String line;
 			StringBuilder sb = new StringBuilder();
 			while((line=br.readLine())!= null){
 			    sb.append(line.trim());
 			}
+			*/
 			//XMLparser only need to check for <form> and </form>
 			XmlPullParserFactory factory = XmlPullParserFactory.newInstance();
-	         factory.setNamespaceAware(true);
-	         XmlPullParser xpp = factory.newPullParser();
+			factory.setNamespaceAware(true);
+	        XmlPullParser xpp = factory.newPullParser();
 
-	         xpp.setInput(new StringReader(line));
-	         int eventType = xpp.getEventType();
-	         int counter = 0;
-	         while (eventType != XmlPullParser.END_DOCUMENT) {
-	          if(eventType == XmlPullParser.START_TAG) {
-	        	  if (xpp.getAttributeName(eventType).equalsIgnoreCase("form")) {
-		              counter++;
-	        	  }
-	          }
-	          eventType = xpp.next();
-	         }
-	         br.close();
-			
+	        xpp.setInput(openFileInput(getResources().getString(R.string.FormListFile)), null);
+	        int eventType = xpp.getEventType();
+	        int counter = 0;
+	        while (eventType != XmlPullParser.END_DOCUMENT) {
+	        	if(eventType == XmlPullParser.START_TAG) {
+	        		if (xpp.getAttributeName(eventType).equalsIgnoreCase("form")) {
+	        			counter++;
+	        		}
+	        	}
+	        	eventType = xpp.next();
+	        }
 			mOutput = "Test"+counter;
 			//mOutput = "TEST";
 			
 			mViewOutput = (TextView) findViewById(R.id.viewOutputText);
 			mTestButton = (Button) findViewById(R.id.testButton);
 			mTestButton.setOnClickListener(new OnClickListener() {
-				
 				@Override
 				public void onClick(View v) {
 					mViewOutput.setText(mOutput);
