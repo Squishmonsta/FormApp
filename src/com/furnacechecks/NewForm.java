@@ -134,6 +134,19 @@ public class NewForm extends Activity {
 				}
 				
 				
+				String formFileEntry = "<form>"+formTitleString+"</form>\n";
+				try {
+					//File created under /data/data/[package name]/files/
+					FileOutputStream outputStream2 = openFileOutput(getResources().getString(R.string.FormListFile),
+					        Context.MODE_APPEND | Context.MODE_WORLD_READABLE); //only a security warning. It's fine
+					outputStream2.write(formFileEntry.getBytes());
+					outputStream2.flush();
+					outputStream2.close();
+				
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+				
 				//3 - Go back to main screen (avoids appending on two timestamps)
 				startActivity(new Intent(getApplicationContext(), MainActivity.class));
 				

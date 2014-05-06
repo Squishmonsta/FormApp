@@ -12,14 +12,15 @@
         <TextView
             android:id="@+id/viewOutputText"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Empty" />
+            android:layout_height="250dp"
+            android:text="@string/Empty"
+            android:textSize="9pt" />
 
         <Button
             android:id="@+id/testButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="PRESS ME!" />
+            android:text="Show Form List" />
 
     </LinearLayout>
 </ScrollView>

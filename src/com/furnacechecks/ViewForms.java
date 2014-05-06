@@ -7,7 +7,6 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 
 import org.w3c.dom.Document;
-import org.w3c.dom.NodeList;
 import org.xml.sax.InputSource;
 
 import android.app.Activity;
@@ -34,7 +33,6 @@ public class ViewForms extends Activity {
         {  
             builder = factory.newDocumentBuilder();  
             Document xmlDoc = builder.parse( new InputSource( new StringReader( xmlStr ) ) );
-            xmlDoc.normalize();
             return xmlDoc;
         } catch (Exception e) {  
             e.printStackTrace();  
@@ -43,7 +41,9 @@ public class ViewForms extends Activity {
     }
 	//----------------------------------------------------------------------------------
 	
+	//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 	
+	//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 	
 	
 	
@@ -70,7 +70,10 @@ public class ViewForms extends Activity {
 			
 			//getting a valid xml doc from the string
 			Document xmlDoc = convertStringToDocument(formListString);
-			NodeList formNodes = xmlDoc.getElementsByTagName("form");
+			//mOutput = xmlDoc.toString();
+			//boolean test = xmlDoc.hasAttributes();
+			
+			//NodeList formNodes = xmlDoc.getElementsByTagName("form");
 			//int counter = formNodes.getLength();
 			
 			
@@ -102,8 +105,8 @@ public class ViewForms extends Activity {
 	        }
 	        */
 			//mOutput = "Test"+counter;
-			mOutput = "TEST";
-			
+			//mOutput = "TEST";
+			mOutput = formListString;
 			mViewOutput = (TextView) findViewById(R.id.viewOutputText);
 			mTestButton = (Button) findViewById(R.id.testButton);
 			mTestButton.setOnClickListener(new OnClickListener() {
